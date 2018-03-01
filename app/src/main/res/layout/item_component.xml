@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--begin mediacatio -->
+    <LinearLayout
+        style="@style/layout_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            style="@style/imgItem"
+            android:background="@drawable/img_pill" />
+
+        <TextView
+            style="@style/tv_title_component"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="@string/title_medication" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="0.0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textSize="@dimen/tvTitleMedica" />
+
+        <View
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_5sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            style="@style/imgItem"
+            android:background="@drawable/img_portfolio_black" />
+
+        <TextView
+            style="@style/tv_title_component"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="@string/group_medi" />
+
+        <Spinner
+            android:id="@+id/spGroup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_spinner"
+            android:textSize="@dimen/_10sdp" />
+
+        <Button
+            android:id="@+id/btnAddGroup"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/img_add" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            style="@style/imgItem"
+            android:background="@drawable/img_profile" />
+
+        <TextView
+            style="@style/tv_title_component"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="@string/doctor" />
+
+        <Spinner
+            android:id="@+id/spDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_spinner"
+            android:textSize="@dimen/_10sdp" />
+
+        <Button
+            android:id="@+id/btnAddDoctor"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/img_add" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            style="@style/imgItem"
+            android:background="@drawable/img_unit" />
+
+        <TextView
+            style="@style/tv_title_component"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="@string/unit" />
+
+        <Spinner
+            android:id="@+id/spUnit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_spinner"
+            android:textSize="@dimen/_10sdp" />
+
+        <View
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            style="@style/imgItem"
+            android:background="@drawable/img_notepad" />
+
+        <TextView
+            style="@style/tv_title_component"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="@string/instruction_medi" />
+
+        <Spinner
+            android:id="@+id/spNote"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_spinner"
+            android:textSize="@dimen/_10sdp" />
+
+        <View
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@null" />
+    </LinearLayout>
+</LinearLayout>

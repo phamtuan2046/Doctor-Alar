@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navDaily"
+            android:icon="@drawable/img_daily"
+            android:title="Daily View" />
+        <item
+            android:id="@+id/navWeekly"
+            android:icon="@drawable/img_weekly"
+            android:title="Weekly View" />
+        <item
+            android:id="@+id/navDoctor"
+            android:icon="@drawable/img_doctor"
+            android:title="Doctor" />
+        <item
+            android:id="@+id/navGroup"
+            android:icon="@drawable/img_portfolio"
+            android:title="Group" />
+        <item
+            android:id="@+id/navInventory"
+            android:icon="@drawable/img_inventory"
+            android:title="Inventory" />
+        <item
+            android:id="@+id/navFilter"
+            android:icon="@drawable/img_filter"
+            android:title="Filter" />
+        <item
+            android:id="@+id/navSearch"
+            android:icon="@drawable/img_search"
+            android:title="Search by Date" />
+    </group>
+
+
+</menu>

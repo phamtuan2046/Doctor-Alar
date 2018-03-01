@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="list_instrustion">
+        <item>No Preference</item>
+        <item>Before Meal</item>
+        <item>With Meal</item>
+        <item>After Meal</item>
+    </array>
+    <array name="spinner_dosage">
+        <item>Pill</item>
+        <item>Mg</item>
+        <item>Gr</item>
+        <item>Ml</item>
+        <item>Ltr</item>
+        <item>Oz</item>
+        <item>Patch</item>
+        <item>Vial</item>
+        <item>Unit</item>
+    </array>
+    <array name="spinner_every">
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+    </array>
+
+    <string-array name="default_value">
+        <item>1</item>
+        <item>100</item>
+        <item>0.5</item>
+        <item>50</item>
+        <item>0.5</item>
+        <item>0.5</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </string-array>
+</resources>

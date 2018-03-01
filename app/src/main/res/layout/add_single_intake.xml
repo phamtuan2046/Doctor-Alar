@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="false">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/defaults"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Single Intake"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold"
+                tools:text="Single Intake" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        style="@style/layout_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            style="@style/imgItem"
+            android:background="@drawable/img_pill" />
+
+        <TextView
+            style="@style/tv_title_component"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="@string/title_medication" />
+
+        <EditText
+            android:id="@+id/edNameMedication"
+            android:layout_width="0.0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textSize="@dimen/tvTitleMedica" />
+
+        <View
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_5sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            style="@style/imgItem"
+            android:background="@drawable/img_portfolio_black" />
+
+        <TextView
+            style="@style/tv_title_component"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="@string/group_medi" />
+
+        <Spinner
+            android:id="@+id/spGroup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_spinner"
+            android:textSize="@dimen/_10sdp" />
+
+        <Button
+            android:id="@+id/btnAddGroup"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/img_add" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/layout_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            style="@style/imgItem"
+            android:background="@drawable/img_profile" />
+
+        <TextView
+            style="@style/tv_title_component"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="@string/doctor" />
+
+        <Spinner
+            android:id="@+id/spDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_spinner"
+            android:textSize="@dimen/_10sdp" />
+
+        <Button
+            android:id="@+id/btnAddDoctor"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/img_add" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/layout_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            style="@style/imgItem"
+            android:background="@drawable/img_unit" />
+
+        <TextView
+            style="@style/tv_title_component"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="@string/unit" />
+
+        <TextView
+            android:id="@+id/tvUnit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1 Pill"
+            android:textColor="@color/color_tv_default"
+            android:textSize="@dimen/_13sdp" />
+
+        <Button
+            android:id="@+id/btnUnit"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/img_dosage" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            style="@style/imgItem"
+            android:background="@drawable/img_notepad" />
+
+        <TextView
+            style="@style/tv_title_component"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="@string/instruction_medi" />
+
+        <Spinner
+            android:id="@+id/spNote"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_spinner"
+            android:textSize="@dimen/_10sdp" />
+
+        <View
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@null" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@color/bg_black" />
+
+    <LinearLayout
+        style="@style/layout_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            style="@style/imgItem"
+            android:background="@drawable/img_calendar" />
+
+        <TextView
+            style="@style/tv_title_component"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="@string/schedule_medi" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/img_ellipse"
+            android:drawablePadding="@dimen/_5sdp"
+            android:text="Date"
+            android:textSize="@dimen/tvTitleMedica" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="10/22/2017"
+            android:textColor="@color/color_tv_default"
+            android:textSize="@dimen/tvTitleMedica" />
+
+        <Button
+            android:id="@+id/btnGetDate"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/img_get_date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/img_ellipse"
+            android:drawablePadding="@dimen/_5sdp"
+            android:text="Time"
+            android:textSize="@dimen/tvTitleMedica" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="21:14"
+            android:textColor="@color/color_tv_default"
+            android:textSize="@dimen/tvTitleMedica" />
+
+        <Button
+            android:id="@+id/btnGetTime"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/img_clock" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+       android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:background="@drawable/bgr_button_default"
+        android:text="Ok"
+        android:textColor="@color/white"
+        android:textSize="15.0dp" />
+</LinearLayout>

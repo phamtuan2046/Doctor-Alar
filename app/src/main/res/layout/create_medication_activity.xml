@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="false">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/defaults"
+                android:homeAsUpIndicator="@drawable/img_back"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="ADD Medication"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/ntSV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:focusable="true"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/item_component" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/bg_black" />
+
+                <include layout="@layout/item_schedule" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@color/bg_black" />
+
+                <include layout="@layout/item_start_date" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@color/bg_black" />
+
+                <include layout="@layout/item_end_date" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@color/bg_black" />
+
+                <include layout="@layout/item_reminder_time" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@color/bg_black" />
+
+                <include layout="@layout/item_add_inventory" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/btnDelete"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bgr_btn_skip"
+                        android:text="DELETE"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:visibility="gone"
+                        android:textColor="@color/defaults"
+                        android:textSize="15.0dp" />
+
+                    <Button
+                        android:id="@+id/btnCreateMedication"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/bgr_button_default"
+                        android:text="Ok"
+                        android:textColor="@color/white"
+                        android:textSize="15.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</LinearLayout>

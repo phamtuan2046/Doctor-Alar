@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            style="@style/imgItem"
+            android:background="@drawable/img_calendar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="@string/schedule_medi"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/tvTitleMedica"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/rd_group_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rdEvery"
+                style="@style/radioButtonComponent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:checked="true"
+                android:gravity="center_vertical"
+                android:text="@string/every_medi" />
+
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rdspecific"
+                style="@style/radioButtonComponent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/specific_days" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/btnSun"
+                    style="@style/toggle_button"
+                    android:textOff="@string/sunday"
+                    android:textOn="@string/sunday" />
+
+                <ToggleButton
+                    android:id="@+id/btnMon"
+                    style="@style/toggle_button"
+                    android:textOff="@string/monday"
+                    android:textOn="@string/monday" />
+
+                <ToggleButton
+                    android:id="@+id/btntu"
+                    style="@style/toggle_button"
+                    android:textOff="@string/tuesday"
+                    android:textOn="@string/tuesday" />
+
+                <ToggleButton
+                    android:id="@+id/btnWen"
+                    style="@style/toggle_button"
+                    android:textOff="@string/wednesday"
+                    android:textOn="@string/wednesday" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/btnTh"
+                    style="@style/toggle_button"
+                    android:textOff="@string/thursday"
+                    android:textOn="@string/thursday" />
+
+                <ToggleButton
+                    android:id="@+id/btnFr"
+                    style="@style/toggle_button"
+                    android:textOff="@string/friday"
+                    android:textOn="@string/friday" />
+
+                <ToggleButton
+                    android:id="@+id/btnSat"
+                    style="@style/toggle_button"
+                    android:textOff="@string/saturday"
+                    android:textOn="@string/saturday" />
+
+            </LinearLayout>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/_63sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnSubNumberday"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/magin_schedule"
+                android:layout_marginRight="@dimen/magin_schedule"
+                android:background="@drawable/img_sub"
+                android:padding="@dimen/_3sdp" />
+
+            <EditText
+                android:id="@+id/edNumberday"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/magin_schedule"
+                android:layout_marginRight="@dimen/magin_schedule"
+                android:background="@drawable/bgr_content_doctor"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:text="1"
+                android:textSize="@dimen/tvTitleMedica" />
+
+            <ImageButton
+                android:id="@+id/btnAddNumberday"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/magin_schedule"
+                android:layout_marginRight="@dimen/magin_schedule"
+                android:background="@drawable/img_add_unit"
+                android:padding="@dimen/_3sdp" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spTimeUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/layout"
+            android:background="@drawable/gradient_spinner" />
+    </RelativeLayout>
+</LinearLayout>

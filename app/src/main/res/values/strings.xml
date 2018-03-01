@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">doctor Aarm</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    //medication
+    <string name="title_medication">Medication</string>
+    <string name="group_medi">Group</string>
+    <string name="doctor">Doctor</string>
+    <string name="schedule_medi">Schedule</string>
+    <string name="every_medi">\u0020Every</string>
+    <string name="specific_days">\u0020Specific Days</string>
+    <string name="specific_date">\u0020Specific date</string>
+    <string name="when">\u0020When</string>
+    <string name="after">\u0020After</string>
+    <string name="indefinite">\u0020Indefinite</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date_medi">End Date</string>
+    <string name="monday">Mo</string>
+    <string name="tuesday">Tu</string>
+    <string name="wednesday">We</string>
+    <string name="thursday">Th</string>
+    <string name="friday">Fi</string>
+    <string name="saturday">Sa</string>
+    <string name="sunday">Su</string>
+    <string name="unit">Unit</string>
+    <string name="instruction_medi">Instruction</string>
+    <string name="remninder">Reminder Time</string>
+    <string name="time">Time</string>
+    <string name="note">Note</string>
+    <string name="bt_skip">Skip</string>
+    <string name="bt_take">Take Now</string>
+    <string name="bt_finish">Finish</string>
+    <string name="bt_snooze">Snooze</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="key_api_direction">AIzaSyAtaDQA_5tnVV2pDnnv-VNnwJ9ni9HcLAk</string>
+    <string name="alert_single_intake">Scheduled must be in the future</string>
+    <string name="alert_medication_name">Please add medication name!</string>
+    <string name="alert_medication_date">End date cannot be before start date</string>
+    <string name="alert_medication_specific_day">Please choose a specific day</string>
+    <string name="alert_medication_date_now">Must be in future</string>
+    <string name="tvcontent_dialog">Input time to take your medication and necessary dosage</string>
+    <string name="inventory_st1">Remaining Units</string>
+    <string name="inventory_st2">Each Units is(in dosage)</string>
+    <string name="inventory_st3">Remind me when under</string>
+    <string name="inventory_st4">Automatically record the number of medication left in your inventory and remind you when it is running out.</string>
+</resources>

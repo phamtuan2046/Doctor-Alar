@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009900</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="bg_black">#CC808080</color>
+    <color name="highlight">#F2edeaea</color>
+    <color name="tab_on">#47a4c9</color>
+    <color name="tab_off">#a3d1e4</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    <color name="blue_navigation">#1AA4F1</color>
+    <color name="blue_top_home">#1983CE</color>
+    <color name="blue_content">#B3E4FB</color>
+    <color name="btn_day">#13ACF5</color>
+    <color name="line">#5dc6ff</color>
+    <color name="green">#006400</color>
+    <color name="toggle_button">#009900</color>
+    <color name="transparent">#00000000</color>
+    <color name="defaults">#009900</color>
+    <color name="color_1">#90f190</color>
+    <color name="color_2">#E0E0E0</color>
+    <color name="color_tv_default">#009900</color>
+    <color name="color_timpicker">#009688</color>
+</resources>

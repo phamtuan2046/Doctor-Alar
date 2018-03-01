@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <RelativeLayout
+            android:id="@+id/mainView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/app_bar_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@+id/contenMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/mainViewMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/lnMenuAdd"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/btnAdd"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bgr_menu_add"
+                    android:visibility="invisible">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rcvMenuAdd"
+                        android:overScrollMode="never"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/btnAdd"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:src="@drawable/img_add1" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navViewMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header_main"
+            app:menu="@menu/activity_main_drawer" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

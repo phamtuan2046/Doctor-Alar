@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="false">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:homeAsUpIndicator="@drawable/img_back"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/defaults"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ADD Doctor"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <!-- begin name-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/doctor_size_image"
+                android:layout_height="@dimen/doctor_size_image"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/img_profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:text="Doctor"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!-- finish name-->
+
+    <!-- begin specialization-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/img_graduation_cap" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:text="Specialization"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edSpecialization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- begin specialization-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/doctor_size_image"
+                android:layout_height="@dimen/doctor_size_image"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/img_phone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:text="Phone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/edPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- begin specialization-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/doctor_size_image"
+                android:layout_height="@dimen/doctor_size_image"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/img_location" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- begin specialization-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/doctor_size_image"
+                android:layout_height="@dimen/doctor_size_image"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/img_mail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAdddoctor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@color/defaults"
+        android:text="OK"
+        android:textColor="@color/white" />
+</LinearLayout>

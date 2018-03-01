@@ -1,0 +1,89 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="actionBarStyle">@style/My.ActionBar.Style</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="My.ActionBar.Style" parent="Widget.AppCompat.ActionBar">
+
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="android:colorControlNormal">@android:color/white</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    /* medication */
+
+    <style name="layout_component">
+        <item name="android:layout_marginLeft">@dimen/_15sdp</item>
+        <item name="android:layout_margin">@dimen/_10sdp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="tv_title_component">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/tvTitleMedica</item>
+    </style>
+
+
+    <style name="toggle_button">
+        <item name="android:layout_width">@dimen/_35sdp</item>
+        <item name="android:layout_height">@dimen/_35sdp</item>
+        <item name="android:layout_margin">@dimen/_3sdp</item>
+        <item name="android:background">@drawable/bgr_toggle_select</item>
+        <item name="android:textColor">@drawable/bgr_toggle_text_select</item>
+    </style>
+
+    <style name="imgItem">
+        <item name="android:layout_width">@dimen/_15sdp</item>
+        <item name="android:layout_height">@dimen/_18sdp</item>
+    </style>
+
+    <style name="radioButtonComponent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/_25sdp</item>
+        <item name="android:textSize">@dimen/tvTitleMedica</item>
+        <item name="android:buttonTint">@color/toggle_button</item>
+    </style>
+
+    <style name="viewPagerTitleStrip">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/top_daily</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+
+    <style name="datepickerDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/defaults</item>
+        <item name="colorControlActivated">@color/defaults</item>
+    </style>
+
+    <style name="timepicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/color_timpicker</item>
+        <item name="colorControlActivated">@color/color_timpicker</item>
+    </style>
+
+</resources>
